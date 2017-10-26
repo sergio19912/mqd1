@@ -1,0 +1,225 @@
+/*trabajamos el cuerpo de la pagina*/
+
+body {
+    /*margen de la pagina para que
+    el menú no tape
+    la primera parte de la pagina*/
+    margin-top: 90px;
+    /*desde la empresa me pidieron que todo estuviese en verdana*/
+    font-family: verdana;
+}
+
+/*imgen logo empresa*/
+.mqd-logo {
+    height: 50px;
+}
+
+/*efecto del btn cuando pasamos por encima con el foco o el raton*/
+nav button:hover, nav button:focus {
+    background-color: #ffed02;
+}
+
+/*efecto al pasar focus hover items del menu*/
+
+
+/*color de los items focus hover*/
+.dropdown-item:focus, .dropdown-item:hover{
+    /*fondo amarillo*/
+    background-color: #ffed02;
+    
+    /*letra negra*/
+    color: black !important;
+}
+
+
+
+#menu .nav-link:hover, #menu .nav-link:focus{
+    text-decoration: solid;
+    text-decoration-color: #ffed02;
+}
+
+/*alineacion de las banderas del menu idiomas*/
+#menu .nav-item.dropdown .flag{
+    
+    float: right;
+}
+
+
+/*mediaqueris pantallas grandes (sm)*/
+@media (min-width: 992px) {
+    /*trabajo con la barra de navegacion*/
+    .navbar-nav {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    /*trabajo con los items del menu*/
+    .navbar-nav>li {
+        display: inline-block;
+        float: none;
+        margin-right: 20px;
+    }
+    
+    /*menus desplegable*/
+    .dropdown-menu{
+        
+    /*sombras*/
+      box-shadow: 19px 19px 134px -17px rgba(0,0,0,0.75);
+    
+    /*color de fondo*/
+    background-color: #343a40 important;
+    border: none;
+      
+    /*bordes redondeados*/
+   border-radius: 0px 0px 10px 10px;
+        
+        
+        
+    }
+    
+    
+  
+    
+    /*quitamos la barra de progreso en dispositivos pequenos*/
+    #barProgeso{
+        
+        display: none;
+    }
+    
+}
+
+/*color de los enlaces*/
+#menu  a{
+    
+    color: white;
+}
+
+/*tratamiento ventana modal*/
+
+.modal-header,
+.modal-footer {
+    background-color: #343a40!important;
+    color: white;
+}
+
+.modal-title{
+    
+     margin: auto;
+    display: block;
+    text-align: center;
+}
+
+
+/*trabajo con las secciones*/
+
+section {
+    box-shadow: -2px 31px 72px -28px rgba(0, 0, 0, 0.75);
+    /*sombra de las secciones*/
+    border-radius: 24px 20px 62px 52px;
+    /*borde redondeado de las secciones*/
+}
+
+/*estilo de las obras*/
+
+
+section img {
+    margin-bottom: 3%;
+    /*margen superior*/
+    height: 200px;
+    /*tamaño de las fotografias*/
+    width: 200px;
+    box-shadow: -2px 5px 19px -2px rgba(0, 0, 0, 0.75);
+    /*sombra de las fotos*/
+    border-radius: 91px 37px 82px 23px;
+    /*bordes redindeados*/
+}
+
+section ::selection
+{
+    
+    background-color: #ffed02;
+}
+
+
+/*texto de cada seccion*/
+
+.texto {
+    margin-bottom: 4%;
+}
+
+
+
+
+/*trabajamos la flecha*/
+#flecha{
+    display: none;
+    border-radius: 200px 200px 200px 200px;
+    width: 5%;
+    position: fixed;
+    top: 91%;
+    right: 3%;
+    z-index: 2;
+   
+}
+
+/*posicionamiento del video en pantallas grandes*/
+    video {
+        display: none;
+        top: 8%;
+        right: 5%;
+        z-index: 10;
+        top: 20%;
+        
+    }
+
+
+@media (min-width: 743px) {
+    
+    /*video*/
+video {
+    position: fixed;
+    width:25%;
+    
+    
+    
+}
+    
+}
+
+/*mediaquery para dispositivos con pantalla pequeñas*/
+
+@media (min-width: 320px) and (max-width: 742px) {
+    
+   
+    video{
+        position: fixed;
+         top: 80%;
+        right: 8%;
+        width: 90%;
+        
+        
+       
+    }
+    
+    #sidebar{
+        
+        z-index: 10;
+    }
+    
+
+    
+}
+
+
+#sidebar  ul{
+    
+    float: left;
+}
+
+
+
+
+
+
+

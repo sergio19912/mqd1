@@ -1,0 +1,102 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+   
+     
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+    
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    position: fixed;
+   
+}
+
+#sidebar {
+    transition: all 0.3s;
+    
+}
+
+/* barra de menu y componentes*/
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+/*enlaces del menu*/
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    text-decoration: none;
+    /*color de los enlaces*/
+    color: white;
+}
+
+/*margen del primer elemento de la lista*/
+#sidebar ul  li:nth-child(2),#sidebar > ul > li:nth-child(5){
+    
+    margin-top: 10px;
+}
+
+/*iconos de los items*/
+.list-unstyled .fa {
+    
+    float: right;
+}
+
+
+/*aspecto de los enlaces al pasar por encima o posicionar foco*/
+#sidebar ul li a:hover,#sidebar ul li a:focus {
+    color: black;
+    background-color: #ffed02;
+}
+
+
+#sidebar ul li.active > a {
+    color: black;
+    background:#ffed02;
+}
+
+#sidebarCollapse{
+    
+    color: black !important;
+    background:#ffed02 !important;
+    border: solid 1px;
+    position: fixed;
+    z-index: 10;
+     opacity:0.2;
+    
+    
+}
+
+
+
+ #sidebarCollapse:hover{
+    opacity:1;
+}
+
+
+
+
+/*diseño para moviles*/
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0px;
+    }
+}
+

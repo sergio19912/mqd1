@@ -1,0 +1,110 @@
+/*cambiamos el color de los elementos*/
+
+/*barra de menu*/
+header  nav{
+    
+   border-bottom: 5px solid white;
+    
+}
+
+/*color de fondo de la barra*/
+.bg-dark{
+    
+    background-color: black !important;
+    
+}
+
+/*color de fondo*/
+body{
+    
+    background-color: black;
+    color:white;
+}
+
+
+/*texto seleccionado*/
+section ::selection
+{
+    
+     color: black;
+    
+    
+}
+
+/*enlaces*/
+
+a:link{
+    
+    color: #ffed02;
+}
+
+/*ventanas modales*/
+
+/*color de fondo de todos los elementos*/
+.modal-header,.modal-footer,.modal-body{
+    
+     background-color: black !important;
+    
+}
+
+/*seleccion del texto de modal-body*/
+
+/*texto seleccionado*/
+.modal-body ::selection
+{
+    
+     color: black;
+   
+    
+}
+
+/*bordes de los elementos*/
+.modal-header{
+    
+    border-bottom: 5px solid white;
+    
+}
+
+.modal-footer{
+    
+     border-top: 5px solid white;
+}
+
+/*menu lateral*/
+#menuRepro{
+    
+      background-color: black;
+    
+}
+
+#menuRepro ul {
+    
+      margin-top: 10px;
+    
+}
+
+
+/*mediqueris para pequenos retoques*/
+@media (max-width: 742px) {
+    
+    /*quitamos el margen superior*/
+    #menuRepro ul {
+    
+      margin-top: 7%;
+}
+    
+    /*quitamos el borde del menu*/
+    header  nav{
+    
+   border-bottom: 0px;
+    
+}
+    
+}
+
+
+
+
+
+
+
